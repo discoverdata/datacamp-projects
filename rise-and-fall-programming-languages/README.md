@@ -1,8 +1,6 @@
----
-title: "Rise and fall of programming languages"
-author: "Varun Khanna"
-date: "15 October 2018"
----
+# "Rise and fall of programming languages"
+## "Varun Khanna"
+## "15 October 2018"
 
 Let us find the trends in the programming language world. What languages
 are growing and which are shrinking so that we can tell which are most
