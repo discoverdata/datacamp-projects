@@ -1,0 +1,251 @@
+country_code,is_independent,currency_name,status,landlocked,country,region,subregion,capital,continent
+TWN,Yes,,,No,,,,Taipei,AS
+AFG,Yes,Afghani,Developing,Yes,Afghanistan,Asia,Southern Asia,Kabul,AS
+ALB,Yes,Lek,Developed,No,Albania,Europe,Southern Europe,Tirana,EU
+DZA,Yes,Algerian Dinar,Developing,No,Algeria,Africa,Northern Africa,Algiers,AF
+ASM,Territory of US,US Dollar,Developing,No,American Samoa,Oceania,Polynesia,Pago Pago,OC
+AND,Yes,Euro,Developed,No,Andorra,Europe,Southern Europe,Andorra la Vella,EU
+AGO,Yes,Kwanza,Developing,No,Angola,Africa,Sub-Saharan Africa,Luanda,AF
+AIA,Territory of GB,East Caribbean Dollar,Developing,No,Anguilla,Americas,Latin America and the Caribbean,The Valley,NA
+ATA,International,No universal currency,,No,Antarctica,,,,AN
+ATG,Yes,East Caribbean Dollar,Developing,No,Antigua and Barbuda,Americas,Latin America and the Caribbean,St. John's,NA
+ARG,Yes,Argentine Peso,Developing,No,Argentina,Americas,Latin America and the Caribbean,Buenos Aires,SA
+ARM,Yes,Armenian Dram,Developing,Yes,Armenia,Asia,Western Asia,Yerevan,AS
+ABW,Part of NL,Aruban Florin,Developing,No,Aruba,Americas,Latin America and the Caribbean,Oranjestad,NA
+AUS,Yes,Australian Dollar,Developed,No,Australia,Oceania,Australia and New Zealand,Canberra,OC
+AUT,Yes,Euro,Developed,No,Austria,Europe,Western Europe,Vienna,EU
+AZE,Yes,Azerbaijan Manat,Developing,Yes,Azerbaijan,Asia,Western Asia,Baku,AS
+BHS,Yes,Bahamian Dollar,Developing,No,Bahamas,Americas,Latin America and the Caribbean,Nassau,NA
+BHR,Yes,Bahraini Dinar,Developing,No,Bahrain,Asia,Western Asia,Manama,AS
+BGD,Yes,Taka,Developing,No,Bangladesh,Asia,Southern Asia,Dhaka,AS
+BRB,Yes,Barbados Dollar,Developing,No,Barbados,Americas,Latin America and the Caribbean,Bridgetown,NA
+BLR,Yes,Belarusian Ruble,Developed,No,Belarus,Europe,Eastern Europe,Minsk,EU
+BEL,Yes,Euro,Developed,No,Belgium,Europe,Western Europe,Brussels,EU
+BLZ,Yes,Belize Dollar,Developing,No,Belize,Americas,Latin America and the Caribbean,Belmopan,NA
+BEN,Yes,CFA Franc BCEAO,Developing,No,Benin,Africa,Sub-Saharan Africa,Porto-Novo,AF
+BMU,Territory of GB,Bermudian Dollar,Developed,No,Bermuda,Americas,Northern America,Hamilton,NA
+BTN,Yes,Indian Rupee and Ngultrum,Developing,Yes,Bhutan,Asia,Southern Asia,Thimphu,AS
+BOL,Yes,Boliviano,Developing,Yes,Bolivia,Americas,Latin America and the Caribbean,Sucre,SA
+BES,Part of NL,US Dollar,Developing,No,Bonaire, SINT EUSTATIUS AND SABA,,Americas,Latin America and the Caribbean,
+BIH,Yes,Convertible Mark,Developed,No,Bosnia and Herzegovina,Europe,Southern Europe,Sarajevo,EU
+BWA,Yes,Pula,Developing,Yes,Botswana,Africa,Sub-Saharan Africa,Gaborone,AF
+BVT,Territory of NO,Norwegian Krone,Developing,No,Bouvet Island,Americas,Latin America and the Caribbean,,AN
+BRA,Yes,Brazilian Real,Developing,No,Brazil,Americas,Latin America and the Caribbean,Brasilia,SA
+IOT,Territory of GB,US Dollar,Developing,No,British Indian Ocean Territory,Africa,Sub-Saharan Africa,Diego Garcia,AS
+VGB,Territory of GB,US Dollar,Developing,No,British Virgin Islands,Americas,Latin America and the Caribbean,Road Town,NA
+BRN,Yes,Brunei Dollar,Developing,No,Brunei,Asia,South-eastern Asia,Bandar Seri Begawan,AS
+BGR,Yes,Bulgarian Lev,Developed,No,Bulgaria,Europe,Eastern Europe,Sofia,EU
+BFA,Yes,CFA Franc BCEAO,Developing,Yes,Burkina Faso,Africa,Sub-Saharan Africa,Ouagadougou,AF
+BDI,Yes,Burundi Franc,Developing,Yes,Burundi,Africa,Sub-Saharan Africa,Bujumbura,AF
+CPV,Yes,Cabo Verde Escudo,Developing,No,Cape Verde,Africa,Sub-Saharan Africa,Praia,AF
+KHM,Yes,Riel,Developing,No,Cambodia,Asia,South-eastern Asia,Phnom Penh,AS
+CMR,Yes,CFA Franc BEAC,Developing,No,Cameroon,Africa,Sub-Saharan Africa,Yaounde,AF
+CAN,Yes,Canadian Dollar,Developed,No,Canada,Americas,Northern America,Ottawa,NA
+CYM,Territory of GB,Cayman Islands Dollar,Developing,No,Cayman Islands,Americas,Latin America and the Caribbean,George Town,NA
+CAF,Yes,CFA Franc BEAC,Developing,Yes,Central African Republic,Africa,Sub-Saharan Africa,Bangui,AF
+TCD,Yes,CFA Franc BEAC,Developing,Yes,Chad,Africa,Sub-Saharan Africa,N'Djamena,AF
+CHL,Yes,Chilean Peso,Developing,No,Chile,Americas,Latin America and the Caribbean,Santiago,SA
+CHN,Yes,Yuan Renminbi,Developing,No,China,Asia,Eastern Asia,Beijing,AS
+HKG,Part of CN,Hong Kong Dollar,Developing,No,Hong Kong SAR,Eastern Asia,Hong Kong,,
+MAC,Part of CN,Pataca,Developing,No,Macau SAR,Eastern Asia,Macao,,
+CXR,Territory of AU,Australian Dollar,Developed,No,Christmas Island,Oceania,Australia and New Zealand,Flying Fish Cove,OC
+CCK,Territory of AU,Australian Dollar,Developed,No,Cocos (Keeling) Islands,Oceania,Australia and New Zealand,West Island,AS
+COL,Yes,Colombian Peso,Developing,No,Colombia,Americas,Latin America and the Caribbean,Bogota,SA
+COM,Yes,Comorian Franc ,Developing,No,Comoros,Africa,Sub-Saharan Africa,Moroni,AF
+COG,Yes,CFA Franc BEAC,Developing,No,Congo,Africa,Sub-Saharan Africa,Brazzaville,AF
+COK,Associated with NZ,New Zealand Dollar,Developing,No,Cook Islands,Oceania,Polynesia,Avarua,OC
+CRI,Yes,Costa Rican Colon,Developing,No,Costa Rica,Americas,Latin America and the Caribbean,San Jose,NA
+HRV,Yes,Kuna,Developed,No,Croatia,Europe,Southern Europe,Zagreb,EU
+CUB,Yes,Cuban Peso and Peso Convertible,Developing,No,Cuba,Americas,Latin America and the Caribbean,Havana,NA
+CUW,Part of NL,Netherlands Antillean Guilder,Developing,No,Curaçao,Americas,Latin America and the Caribbean, Willemstad,NA
+CYP,Yes,Euro,Developed,No,Cyprus,Asia,Western Asia,Nicosia,EU
+CZE,Yes,Czech Koruna,Developed,No,Czech Republic,Europe,Eastern Europe,Prague,EU
+CIV,Yes,CFA Franc BCEAO,Developing,No,Côte d'Ivoire,Africa,Sub-Saharan Africa,Yamoussoukro,AF
+PRK,Yes,North Korean Won,Developing,No,Korea DPR,Asia,Eastern Asia,Pyongyang,AS
+COD,Yes,Congolese Franc,Developing,No,Congo Dem. Rep.,Africa,Sub-Saharan Africa,Kinshasa,AF
+DNK,Yes,Danish Krone,Developed,No,Denmark,Europe,Northern Europe,Copenhagen,EU
+DJI,Yes,Djibouti Franc,Developing,No,Djibouti,Africa,Sub-Saharan Africa,Djibouti,AF
+DMA,Yes,East Caribbean Dollar,Developing,No,Dominica,Americas,Latin America and the Caribbean,Roseau,NA
+DOM,Yes,Dominican Peso,Developing,No,Dominican Republic,Americas,Latin America and the Caribbean,Santo Domingo,NA
+ECU,Yes,US Dollar,Developing,No,Ecuador,Americas,Latin America and the Caribbean,Quito,SA
+EGY,Yes,Egyptian Pound,Developing,No,Egypt,Africa,Northern Africa,Cairo,AF
+SLV,Yes,El Salvador Colon and US Dollar,Developing,No,El Salvador,Americas,Latin America and the Caribbean,San Salvador,NA
+GNQ,Yes,CFA Franc BEAC,Developing,No,Equatorial Guinea,Africa,Sub-Saharan Africa,Malabo,AF
+ERI,Yes,Nakfa,Developing,No,Eritrea,Africa,Sub-Saharan Africa,Asmara,AF
+EST,Yes,Euro,Developed,No,Estonia,Europe,Northern Europe,Tallinn,EU
+SWZ,Yes,Lilangeni,Developing,Yes,Eswatini,Africa,Sub-Saharan Africa,Mbabane,AF
+ETH,Yes,Ethiopian Birr,Developing,Yes,Ethiopia,Africa,Sub-Saharan Africa,Addis Ababa,AF
+FLK,Territory of GB,,Developing,No,Falkland Islands (Malvinas),Americas,Latin America and the Caribbean,Stanley,SA
+FRO,Part of DK,Danish Krone,Developed,No,Faroe Islands,Europe,Northern Europe,Torshavn,EU
+FJI,Yes,Fiji Dollar,Developing,No,Fiji,Oceania,Melanesia,Suva,OC
+FIN,Yes,Euro,Developed,No,Finland,Europe,Northern Europe,Helsinki,EU
+FRA,Yes,Euro,Developed,No,France,Europe,Western Europe,Paris,EU
+GUF,Part of FR,Euro,Developing,No,French Guiana,Americas,Latin America and the Caribbean,Cayenne,SA
+PYF,Territory of FR,CFP Franc,Developing,No,French Polynesia,Oceania,Polynesia,Papeete,OC
+ATF,Territory of FR,Euro,Developing,No,French Southern Territories,Africa,Sub-Saharan Africa,Port-aux-Francais,AN
+GAB,Yes,CFA Franc BEAC,Developing,No,Gabon,Africa,Sub-Saharan Africa,Libreville,AF
+GMB,Yes,Dalasi,Developing,No,Gambia The,Africa,Sub-Saharan Africa,Banjul,AF
+GEO,Yes,Lari,Developing,No,Georgia,Asia,Western Asia,Tbilisi,AS
+DEU,Yes,Euro,Developed,No,Germany,Europe,Western Europe,Berlin,EU
+GHA,Yes,Ghana Cedi,Developing,No,Ghana,Africa,Sub-Saharan Africa,Accra,AF
+GIB,Territory of GB,Gibraltar Pound,Developed,No,Gibraltar,Europe,Southern Europe,Gibraltar,EU
+GRC,Yes,Euro,Developed,No,Greece,Europe,Southern Europe,Athens,EU
+GRL,Part of DK,Danish Krone,Developed,No,Greenland,Americas,Northern America,Nuuk,NA
+GRD,Yes,East Caribbean Dollar,Developing,No,Grenada,Americas,Latin America and the Caribbean,St. George's,NA
+GLP,Part of FR,Euro,Developing,No,Guadeloupe,Americas,Latin America and the Caribbean,Basse-Terre,NA
+GUM,Territory of US,US Dollar,Developing,No,Federated States of Micronesia,Oceania,Micronesia,Hagatna,OC
+GTM,Yes,Quetzal,Developing,No,Guatemala,Americas,Latin America and the Caribbean,Guatemala City,NA
+GGY,Crown dependency of GB,Pound Sterling,Developed,No,Guernsey,Europe,Northern Europe,St Peter Port,EU
+GIN,Yes,Guinean Franc,Developing,No,Guinea,Africa,Sub-Saharan Africa,Conakry,AF
+GNB,Yes,CFA Franc BCEAO,Developing,No,Guinea-Bissau,Africa,Sub-Saharan Africa,Bissau,AF
+GUY,Yes,Guyana Dollar,Developing,No,Guyana,Americas,Latin America and the Caribbean,Georgetown,SA
+HTI,Yes,Gourde and US Dollar,Developing,No,Haiti,Americas,Latin America and the Caribbean,Port-au-Prince,NA
+HMD,Territory of AU,Australian Dollar,Developed,No,Heard Island and McDonald Islands,Oceania,Australia and New Zealand,,AN
+VAT,Yes,Euro,Developed,No,Holy See,Europe,Southern Europe,Vatican City,EU
+HND,Yes,Lempira,Developing,No,Honduras,Americas,Latin America and the Caribbean,Tegucigalpa,NA
+HUN,Yes,Forint,Developed,No,Hungary,Europe,Eastern Europe,Budapest,EU
+ISL,Yes,Iceland Krona,Developed,No,Iceland,Europe,Northern Europe,Reykjavik,EU
+IND,Yes,Indian Rupee,Developing,No,India,Asia,Southern Asia,New Delhi,AS
+IDN,Yes,Rupiah,Developing,No,Indonesia,Asia,South-eastern Asia,Jakarta,AS
+IRN,Yes,Iranian Rial,Developing,No,Iran,Asia,Southern Asia,Tehran,AS
+IRQ,Yes,Iraqi Dinar,Developing,No,Iraq,Asia,Western Asia,Baghdad,AS
+IRL,Yes,Euro,Developed,No,Ireland,Europe,Northern Europe,Dublin,EU
+IMN,Crown dependency of GB,Pound Sterling,Developed,No,Isle of Man,Europe,Northern Europe,Douglas,EU
+ISR,Yes,New Israeli Sheqel,Developed,No,Israel,Asia,Western Asia,Jerusalem,AS
+ITA,Yes,Euro,Developed,No,Italy,Europe,Southern Europe,Rome,EU
+JAM,Yes,Jamaican Dollar,Developing,No,Jamaica,Americas,Latin America and the Caribbean,Kingston,NA
+JPN,Yes,Yen,Developed,No,Japan,Asia,Eastern Asia,Tokyo,AS
+JEY,Crown dependency of GB,Pound Sterling,Developed,No,Jersey,Europe,Northern Europe,Saint Helier,EU
+JOR,Yes,Jordanian Dinar,Developing,No,Jordan,Asia,Western Asia,Amman,AS
+KAZ,Yes,Tenge,Developing,Yes,Kazakhstan,Asia,Central Asia,Astana,AS
+KEN,Yes,Kenyan Shilling,Developing,No,Kenya,Africa,Sub-Saharan Africa,Nairobi,AF
+KIR,Yes,Australian Dollar,Developing,No,Kiribati,Oceania,Micronesia,Tarawa,OC
+KWT,Yes,Kuwaiti Dinar,Developing,No,Kuwait,Asia,Western Asia,Kuwait City,AS
+KGZ,Yes,Som,Developing,Yes,Kyrgyzstan,Asia,Central Asia,Bishkek,AS
+LAO,Yes,Lao Kip,Developing,Yes,Lao PDR,Asia,South-eastern Asia,Vientiane,AS
+LVA,Yes,Euro,Developed,No,Latvia,Europe,Northern Europe,Riga,EU
+LBN,Yes,Lebanese Pound,Developing,No,Lebanon,Asia,Western Asia,Beirut,AS
+LSO,Yes,Loti and Rand,Developing,Yes,Lesotho,Africa,Sub-Saharan Africa,Maseru,AF
+LBR,Yes,Liberian Dollar,Developing,No,Liberia,Africa,Sub-Saharan Africa,Monrovia,AF
+LBY,Yes,Libyan Dinar,Developing,No,Libya,Africa,Northern Africa,Tripoli,AF
+LIE,Yes,Swiss Franc,Developed,No,Liechtenstein,Europe,Western Europe,Vaduz,EU
+LTU,Yes,Euro,Developed,No,Lithuania,Europe,Northern Europe,Vilnius,EU
+LUX,Yes,Euro,Developed,No,Luxembourg,Europe,Western Europe,Luxembourg,EU
+MDG,Yes,Malagasy Ariary,Developing,No,Madagascar,Africa,Sub-Saharan Africa,Antananarivo,AF
+MWI,Yes,Malawi Kwacha,Developing,Yes,Malawi,Africa,Sub-Saharan Africa,Lilongwe,AF
+MYS,Yes,Malaysian Ringgit,Developing,No,Malaysia,Asia,South-eastern Asia,Kuala Lumpur,AS
+MDV,Yes,Rufiyaa,Developing,No,Maldives,Asia,Southern Asia,Male,AS
+MLI,Yes,CFA Franc BCEAO,Developing,Yes,Mali,Africa,Sub-Saharan Africa,Bamako,AF
+MLT,Yes,Euro,Developed,No,Malta,Europe,Southern Europe,Valletta,EU
+MHL,Yes,US Dollar,Developing,No,Marshall Islands,Oceania,Micronesia,Majuro,OC
+MTQ,Part of FR,Euro,Developing,No,Martinique,Americas,Latin America and the Caribbean,Fort-de-France,NA
+MRT,Yes,Ouguiya,Developing,No,Mauritania,Africa,Sub-Saharan Africa,Nouakchott,AF
+MUS,Yes,Mauritius Rupee,Developing,No,Mauritius,Africa,Sub-Saharan Africa,Port Louis,AF
+MYT,Part of FR,Euro,Developing,No,Mayotte,Africa,Sub-Saharan Africa,Mamoudzou,AF
+MEX,Yes,Mexican Peso,Developing,No,Mexico,Americas,Latin America and the Caribbean,Mexico City,NA
+FSM,Yes,US Dollar,Developing,No,Micronesia (Federated States of),Oceania,Micronesia,Palikir,OC
+MCO,Yes,Euro,Developed,No,Monaco,Europe,Western Europe,Monaco,EU
+MNG,Yes,Tugrik,Developing,Yes,Mongolia,Asia,Eastern Asia,Ulan Bator,AS
+MNE,Yes,Euro,Developed,No,Montenegro,Europe,Southern Europe,Podgorica,EU
+MSR,Territory of GB,East Caribbean Dollar,Developing,No,Montserrat,Americas,Latin America and the Caribbean,Plymouth,NA
+MAR,Yes,Moroccan Dirham,Developing,No,Morocco,Africa,Northern Africa,Rabat,AF
+MOZ,Yes,Mozambique Metical,Developing,No,Mozambique,Africa,Sub-Saharan Africa,Maputo,AF
+MMR,Yes,Kyat,Developing,No,Myanmar,Asia,South-eastern Asia,Nay Pyi Taw,AS
+NAM,Yes,Namibia Dollar and Rand,Developing,No,Namibia,Africa,Sub-Saharan Africa,Windhoek,AF
+NRU,Yes,Australian Dollar,Developing,No,Nauru,Oceania,Micronesia,Yaren,OC
+NPL,Yes,Nepalese Rupee,Developing,Yes,Nepal,Asia,Southern Asia,Kathmandu,AS
+NLD,Yes,Euro,Developed,No,Netherlands,Europe,Western Europe,Amsterdam,EU
+NCL,Territory of FR,CFP Franc,Developing,No,New Caledonia,Oceania,Melanesia,Noumea,OC
+NZL,Yes,New Zealand Dollar,Developed,No,New Zealand,Oceania,Australia and New Zealand,Wellington,OC
+NIC,Yes,Cordoba Oro,Developing,No,Nicaragua,Americas,Latin America and the Caribbean,Managua,NA
+NER,Yes,CFA Franc BCEAO,Developing,Yes,Niger,Africa,Sub-Saharan Africa,Niamey,AF
+NGA,Yes,Naira,Developing,No,Nigeria,Africa,Sub-Saharan Africa,Abuja,AF
+NIU,Associated with NZ,New Zealand Dollar,Developing,No,Niue,Oceania,Polynesia,Alofi,OC
+NFK,Territory of AU,Australian Dollar,Developed,No,Norfolk Island,Oceania,Australia and New Zealand,Kingston,OC
+MNP,Commonwealth of US,US Dollar,Developing,No,Northern Mariana Islands,Oceania,Micronesia,Saipan,OC
+NOR,Yes,Norwegian Krone,Developed,No,Norway,Europe,Northern Europe,Oslo,EU
+OMN,Yes,Rial Omani,Developing,No,Oman,Asia,Western Asia,Muscat,AS
+PAK,Yes,Pakistan Rupee,Developing,No,Pakistan,Asia,Southern Asia,Islamabad,AS
+PLW,Yes,US Dollar,Developing,No,Palau,Oceania,Micronesia,Melekeok,OC
+PAN,Yes,Balboa and US Dollar,Developing,No,Panama,Americas,Latin America and the Caribbean,Panama City,NA
+PNG,Yes,Kina,Developing,No,Papua New Guinea,Oceania,Melanesia,Port Moresby,OC
+PRY,Yes,Guarani,Developing,Yes,Paraguay,Americas,Latin America and the Caribbean,Asuncion,SA
+PER,Yes,Sol,Developing,No,Peru,Americas,Latin America and the Caribbean,Lima,SA
+PHL,Yes,Philippine Peso,Developing,No,Philippines,Asia,South-eastern Asia,Manila,AS
+PCN,Territory of GB,New Zealand Dollar,Developing,No,Pitcairn,Oceania,Polynesia,Adamstown,OC
+POL,Yes,Zloty,Developed,No,Poland,Europe,Eastern Europe,Warsaw,EU
+PRT,Yes,Euro,Developed,No,Portugal,Europe,Southern Europe,Lisbon,EU
+PRI,Commonwealth of US,US Dollar,Developing,No,Puerto Rico,Americas,Latin America and the Caribbean,San Juan,NA
+QAT,Yes,Qatari Rial,Developing,No,Qatar,Asia,Western Asia,Doha,AS
+KOR,Yes,Won,Developing,No,Korea Rep,Asia,Eastern Asia,Seoul,AS
+MDA,Yes,Moldovan Leu,Developed,Yes,Republic of Moldova,Europe,Eastern Europe,Chisinau,EU
+ROU,Yes,Romanian Leu,Developed,No,Romania,Europe,Eastern Europe,Bucharest,EU
+RUS,Yes,Russian Ruble,Developed,No,Russian Federation,Europe,Eastern Europe,Moscow,EU
+RWA,Yes,Rwanda Franc,Developing,Yes,Rwanda,Africa,Sub-Saharan Africa,Kigali,AF
+REU,Part of FR,Euro,Developing,No,Reunion,Africa,Sub-Saharan Africa,Saint-Denis,AF
+BLM,Part of FR,Euro,Developing,No,Saint Barthélemy,Americas,Latin America and the Caribbean,Gustavia,NA
+SHN,Territory of GB,Saint Helena Pound,Developing,No,Saint Helena,Africa,Sub-Saharan Africa,Jamestown,x
+KNA,Yes,East Caribbean Dollar,Developing,No,Saint Kitts and Nevis,Americas,Latin America and the Caribbean,Basseterre,NA
+LCA,Yes,East Caribbean Dollar,Developing,No,Saint Lucia,Americas,Latin America and the Caribbean,Castries,NA
+MAF,Part of FR,Euro,Developing,No,Saint Martin (French Part),Americas,Latin America and the Caribbean,Marigot,NA
+SPM,Part of FR,Euro,Developed,No,Saint Pierre and Miquelon,Americas,Northern America,Saint-Pierre,NA
+VCT,Yes,East Caribbean Dollar,Developing,No,St Vincent and the Grenadines,Americas,Latin America and the Caribbean,Kingstown,NA
+WSM,Yes,Tala,Developing,No,Samoa,Oceania,Polynesia,Apia,OC
+SMR,Yes,Euro,Developed,No,San Marino,Europe,Southern Europe,San Marino,EU
+STP,Yes,Dobra,Developing,No,Sao Tome and Principe,Africa,Sub-Saharan Africa,Sao Tome,AF
+,,,Developed,No,Sark,Europe,Northern Europe,,
+SAU,Yes,Saudi Riyal,Developing,No,Saudi Arabia,Asia,Western Asia,Riyadh,AS
+SEN,Yes,CFA Franc BCEAO,Developing,No,Senegal,Africa,Sub-Saharan Africa,Dakar,AF
+SRB,Yes,Serbian Dinar,Developed,No,Serbia,Europe,Southern Europe,Belgrade,EU
+SYC,Yes,Seychelles Rupee,Developing,No,Seychelles,Africa,Sub-Saharan Africa,Victoria,AF
+SLE,Yes,Leone,Developing,No,Sierra Leone,Africa,Sub-Saharan Africa,Freetown,AF
+SGP,Yes,Singapore Dollar,Developing,No,Singapore,Asia,South-eastern Asia,Singapore,AS
+SXM,Part of NL,Netherlands Antillean Guilder,Developing,No,Sint Maarten (Dutch part),Americas,Latin America and the Caribbean,Philipsburg,NA
+SVK,Yes,Euro,Developed,No,Slovakia,Europe,Eastern Europe,Bratislava,EU
+SVN,Yes,Euro,Developed,No,Slovenia,Europe,Southern Europe,Ljubljana,EU
+SLB,Yes,Solomon Islands Dollar,Developing,No,Solomon Islands,Oceania,Melanesia,Honiara,OC
+SOM,Yes,Somali Shilling,Developing,No,Somalia,Africa,Sub-Saharan Africa,Mogadishu,AF
+ZAF,Yes,Rand,Developing,No,South Africa,Africa,Sub-Saharan Africa,Pretoria,AF
+SGS,Territory of GB,No universal currency,Developing,No,South Georgia and the South Sandwich Islands,Americas,Latin America and the Caribbean,Grytviken,AN
+SSD,Yes,South Sudanese Pound,Developing,Yes,South Sudan,Africa,Sub-Saharan Africa,Juba,AF
+ESP,Yes,Euro,Developed,No,Spain,Europe,Southern Europe,Madrid,EU
+LKA,Yes,Sri Lanka Rupee,Developing,No,Sri Lanka,Asia,Southern Asia,Colombo,AS
+PSE,In contention,No universal currency,Developing,No,Palestinian Territory, Occupied,Asia,Western Asia,East Jerusalem,x
+SDN,Yes,Sudanese Pound,Developing,No,Sudan,Africa,Northern Africa,Khartoum,AF
+SUR,Yes,Surinam Dollar,Developing,No,Suriname,Americas,Latin America and the Caribbean,Paramaribo,SA
+SJM,Territory of NO,Norwegian Krone,Developed,No,Svalbard and Jan Mayen Islands,Europe,Northern Europe,Longyearbyen,EU
+SWE,Yes,Swedish Krona,Developed,No,Sweden,Europe,Northern Europe,Stockholm,EU
+CHE,Yes,Swiss Franc,Developed,No,Switzerland,Europe,Western Europe,Bern,EU
+SYR,Yes,Syrian Pound,Developing,No,Syria,Asia,Western Asia,Damascus,AS
+TJK,Yes,Somoni,Developing,Yes,Tajikistan,Asia,Central Asia,Dushanbe,AS
+THA,Yes,Baht,Developing,No,Thailand,Asia,South-eastern Asia,Bangkok,AS
+MKD,Yes,Denar,Developed,Yes,Macedonia,Europe,Southern Europe,Skopje,EU
+TLS,Yes,US Dollar,Developing,No,Timor Leste,Asia,South-eastern Asia,Dili,OC
+TGO,Yes,CFA Franc BCEAO,Developing,No,Togo,Africa,Sub-Saharan Africa,Lome,AF
+TKL,Territory of NZ,New Zealand Dollar,Developing,No,Tokelau,Oceania,Polynesia,,OC
+TON,Yes,Pa’anga,Developing,No,Tonga,Oceania,Polynesia,Nuku'alofa,OC
+TTO,Yes,Trinidad and Tobago Dollar,Developing,No,Trinidad and Tobago,Americas,Latin America and the Caribbean,Port of Spain,NA
+TUN,Yes,Tunisian Dinar,Developing,No,Tunisia,Africa,Northern Africa,Tunis,AF
+TUR,Yes,Turkish Lira,Developing,No,Turkey,Asia,Western Asia,Ankara,AS
+TKM,Yes,Turkmenistan New Manat,Developing,Yes,Turkmenistan,Asia,Central Asia,Ashgabat,AS
+TCA,Territory of GB,US Dollar,Developing,No,Turks and Caicos Islands,Americas,Latin America and the Caribbean,Cockburn Town,NA
+TUV,Yes,Australian Dollar,Developing,No,Tuvalu,Oceania,Polynesia,Funafuti,OC
+UGA,Yes,Uganda Shilling,Developing,Yes,Uganda,Africa,Sub-Saharan Africa,Kampala,AF
+UKR,Yes,Hryvnia,Developed,No,Ukraine,Europe,Eastern Europe,Kyiv,EU
+ARE,Yes,UAE Dirham,Developing,No,United Arab Emirates,Asia,Western Asia,Abu Dhabi,AS
+GBR,Yes,Pound Sterling,Developed,No,United Kingdom,Europe,Northern Europe,London,EU
+TZA,Yes,Tanzanian Shilling,Developing,No,Tanzania,Africa,Sub-Saharan Africa,Dodoma,x
+UMI,Territories of US,US Dollar,Developing,No,United States Minor Outlying Islands,Oceania,Micronesia,,OC
+VIR,Territory of US,US Dollar,Developing,No,United States Virgin Islands,Americas,Latin America and the Caribbean,Charlotte Amalie,NA
+USA,Yes,US Dollar,Developed,No,United States of America,Americas,Northern America,Washington,NA
+URY,Yes,Peso Uruguayo,Developing,No,Uruguay,Americas,Latin America and the Caribbean,Montevideo,SA
+UZB,Yes,Uzbekistan Sum,Developing,Yes,Uzbekistan,Asia,Central Asia,Tashkent,AS
+VUT,Yes,Vatu,Developing,No,Vanuatu,Oceania,Melanesia,Port Vila,OC
+VEN,Yes,Bolívar,Developing,No,Venezuela,Americas,Latin America and the Caribbean,Caracas,SA
+VNM,Yes,Dong,Developing,No,Vietnam,Asia,South-eastern Asia,Hanoi,AS
+WLF,Territory of FR,CFP Franc,Developing,No,Wallis and Futuna Islands,Oceania,Polynesia,Mata Utu,OC
+ESH,In contention,Moroccan Dirham,Developing,No,Western Sahara,Africa,Northern Africa,El-Aaiun,AF
+YEM,Yes,Yemeni Rial,Developing,No,Yemen,Asia,Western Asia,Sanaa,AS
+ZMB,Yes,Zambian Kwacha,Developing,Yes,Zambia,Africa,Sub-Saharan Africa,Lusaka,AF
+ZWE,Yes,Zimbabwe Dollar,Developing,Yes,Zimbabwe,Africa,Sub-Saharan Africa,Harare,AF
+ALA,Part of FI,Euro,Developed,No,Åland Islands,Europe,Northern Europe,Mariehamn,EU
