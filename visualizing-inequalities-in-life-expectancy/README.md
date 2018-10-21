@@ -1,5 +1,5 @@
 # United Nations life expectancy data
--------------------------------------
+-----------------------------------
 
 ## Varun Khanna
 ### 17 October 2018
@@ -8,11 +8,12 @@
 knitr::opts_chunk$set(fig.width = 10, fig.height = 7, fig.path = 'Figs/', warning = FALSE, message = FALSE)
 ```
 
+
 Life expectancy at birth is a measure of the average a living being is expected to live. It takes into account several demographic factors like gender, country, or year of birth.
 
-Life expectancy at birth can vary along time or between countries because of many causes: the evolution of medicine, the degree of development of countries, or the effect of armed conflicts. Life expectancy varies between gender, as well. The data shows that women live longer that men. Why? Several potential factors, including biological reasons and the theory that women tend to be more health conscious.
+Life expectancy at birth can vary along time or between countries because of many causes: the evolution of medicine, the degree of development of countries, or the effect of armed conflicts. Life expectancy varies between gender, as well. The data shows that women live longer than men. Why? Several potential factors, including biological reasons and the theory that women tend to be more health conscious.
 
-Let's create some plots to explore the inequalities about life expectancy at birth around the world. We will use a dataset from the United Nations Statistics Division, which is available [here](dataset.csv)
+Let's create some plots to explore the inequalities in life expectancy at birth around the world. We will use data from the United Nations Statistics Division, which is available [here](dataset.csv)
 
 ``` r
 library("tidyverse")
@@ -106,9 +107,9 @@ head(merged)
 Visualize I
 -----------
 
-A scatter plot is a useful way to visualize the relationship between two variables. It is a simple plot in which points are arranged on two axes, each of which represents one of those variables.
+A scatter plot is a useful way to visualize the relationship between the two variables. It is a simple plot in which points are arranged on two axes, each of which represents one of those variables.
 
-Let's create a scatter plot using `ggplot2` to represent life expectancy of males (on the x-axis) against females (on the y-axis). We will create a straightforward plot in this task, without many details. We will take care of these kinds of things shortly.
+Let's create a scatter plot using `ggplot2` to represent life expectancy of males (on the x-axis) against females (on the y-axis). We will create a straightforward plot in this task, without much details. We will take care of these kinds of things shortly.
 
 ``` r
 # Plotting male and female life expectancy
@@ -120,7 +121,7 @@ merged %>% ggplot(mapping = aes(x = Male, y = Female, color = factor(landlocked)
 
 **Note**: Land-locked countries on average have less life expectancy than countries which are not land-locked.
 
-This time color by region
+This time, color by region
 
 ``` r
 # Plotting male and female life expectancy
@@ -130,7 +131,7 @@ merged %>% ggplot(mapping = aes(x = Male, y = Female, color = factor(region))) +
 
 ![](Figs/plot_2-1.png)
 
-**Note:** Most Africian countries are at the bottom left corner indicating that the life expectancy is lower whereas European and American countries are at top right corner while majority of the Asian are in the middle.
+**Note:** Most African countries are at the bottom left corner indicating that the life expectancy is lower whereas European and American countries are at the top right corner while the majority of the Asian countries are in the middle.
 
 Color by status
 
@@ -142,12 +143,12 @@ merged %>% ggplot(mapping = aes(x = Male, y = Female, color = factor(status))) +
 
 ![](Figs/plot_3-1.png)
 
-**Note:** Most developed countries have life\_expectancy above 70 whereas there is long range of life expectancy in developing nations.
+**Note:** Most developed countries have life\_expectancy above 70 whereas there is a long range of life expectancy in developing nations.
 
 Reference lines I
 -----------------
 
-A good plot must be easy to understand. There are many tools in `ggplot2` to achieve this goal and we will explore some of them now. Starting from the previous plot, let's set the same limits for both axes as well as place a diagonal line for reference. After doing this, the difference between men and women across countries will be easier to interpret.
+A good plot must be easy to understand. There are several tools in `ggplot2` to achieve this goal and we will explore some of them now. Starting from the previous plot, let's set the same limits for both axes as well as place a diagonal line for reference. After doing this, the difference between men and women across countries will be easier to interpret.
 
 After completing this task, we will see how most of the points are arranged above the diagonal and how there is a significant dispersion among them. What does this all mean?
 
@@ -167,7 +168,7 @@ merged %>% ggplot(mapping = aes(x = Male, y = Female)) +
 Plot titles and axis labels
 ---------------------------
 
-A key point to make a plot understandable is placing clear labels on it. Let's add titles, axis labels, and a caption to refer to the source of data. Let's also change the appearance to make it clearer.
+An important point in making the plot understandable is placing clear labels on it. Let's add titles, axis labels and captions to refer to the source of data. Let's also change the appearance to make it clearer.
 
 ``` r
 # Adding labels to previous plot
@@ -188,7 +189,7 @@ ggplot(merged, aes(x = Male, y = Female)) +
 Highlighting remarkable countries I
 -----------------------------------
 
-Now, we will label some points of our plot with the name of its corresponding country. We want to draw attention to some special countries where the gap in life expectancy between men and women is significantly high. These will be the final touches on this first plot.
+Now, we will label some points of our plot with the name of its corresponding country. We want to draw attention to some special countries where the gap in life expectancy between men and women is significantly higher. These will be the final touches on this first plot.
 
 ``` r
 merged <- mutate(merged, diff_female_male = Female - Male)
@@ -196,7 +197,7 @@ shorter_female_longevity <- merged %>% arrange(diff_female_male) %>% head(5)
 longer_female_longevity <- merged %>% arrange(desc(diff_female_male)) %>% head(5)
 
 # Adding text to the previous plot to label countries of interest
-p <- ggplot(merged, aes(x = Male, y = Female, fill = factor(region))) +
+ggplot(merged, aes(x = Male, y = Female, fill = factor(region))) +
     geom_point(shape = 21,size = 2, position = "jitter") +
     geom_abline(intercept = 0, slope = 1, linetype = 2) +
     scale_x_continuous(limits = c(35,85)) +
@@ -205,17 +206,20 @@ p <- ggplot(merged, aes(x = Male, y = Female, fill = factor(region))) +
          subtitle = "Years. Period: 2000-2005. Average.",
          caption = "Source: United Nations Statistics Division",
          x = "Males",
-         y = "Females") 
-# Add countries which shorter female longevity
-p <- p + geom_text(data = shorter_female_longevity, label = shorter_female_longevity$country, color = "red")
+         y = "Females") + 
+
+# Add countries with shorter female longevity
+  geom_text(data = shorter_female_longevity, label = shorter_female_longevity$country, color = "red") + 
   
 # Add countries with longer female longevity
-p <- p +   geom_text(data = longer_female_longevity, label = longer_female_longevity$country, color = "blue")
+  geom_text(data = longer_female_longevity, label = longer_female_longevity$country, color = "blue") +
 # Change the default color scheme and divide the plot based on status
-p <- p + scale_fill_brewer(palette = "Dark2", name = "Region") + facet_wrap(~status)
+  scale_fill_brewer(palette = "Dark2", name = "Region") + facet_wrap(~status)
 ```
 
-**Note:** countries in the blue color label have have female life expectancy much higher as compared to male life expectancy whereas countries in red color label have lower female life expectancy. Most blue countries are developed and former members of USSR while most red counties are Africian and Asian.
+![](Figs/highlight_1-1.png)
+
+**Note:** countries in the blue color label have the female life expectancy much higher as compared to male life expectancy whereas countries in red color label have the lower female life expectancy. Most blue countries are developed and former members of USSR while most red counties are African and Asian.
 
 How has life expectancy by gender evolved?
 ------------------------------------------
@@ -269,7 +273,7 @@ kable(head(merged2))
 Visualize II
 ------------
 
-Now let's create our second plot in which we will represent average **life expectancy differences between "1985-1990" and "2000-2005"** for men and women. Adding reference lines can make plots easier to understand. We will add a diagonal line to visualize differences between men and women more clearly and we will add two more lines to help to identify in which countries people increased or decreased their life expectancy in the period analyzed.
+Now let's create our second plot in which we will represent the average **life expectancy differences between "1985-1990" and "2000-2005"** for men and women. Adding reference lines can make plots easier to understand. We will add a diagonal line to visualize differences between men and women more clearly and we will add two more lines to help to identify in which countries people increased or decreased their life expectancy in the period analyzed.
 
 ``` r
 # Adding an hline and vline to previous plot
@@ -293,7 +297,7 @@ ggplot(merged2, aes(x = diff_Male, y = diff_Female, fill = factor(region))) +
 Highlighting remarkable countries
 ---------------------------------
 
-Concretely, we will point those three where the aggregated average life expectancy for men and women increased most and those three where decreased most in the period.
+Concretely, we will point to those three where the aggregated average life expectancy for men and women increased and decreased most in the period.
 
 ``` r
 # Subseting data to obtain countries of interest
@@ -318,10 +322,10 @@ ggplot(merged2, aes(x = diff_Male, y = diff_Female, fill = factor(region))) +
 
 ![](Figs/highlight_2-1.png)
 
-**Note:** Most life expectancy increase from 1985-2005 was observed in Egypt, Bhutan and Timor Leste (all Asian countries) on the other hand Zimbabwe, Botswana and Swaziland (all Africian countries) saw a significant drop in life expectancy.
+**Note:** Most life expectancy increase from 1985-2005 was observed in Egypt, Bhutan and Timor Leste (all Asian countries) on the other hand Zimbabwe, Botswana and Swaziland (all African countries) saw a significant drop in life expectancy.
 
-Ok! What about Indian subcontinent
-----------------------------------
+Ok! What about the Indian subcontinent?
+---------------------------------------
 
 ``` r
 indian_subcontinent <- filter(merged2, subregion == "Southern Asia")
