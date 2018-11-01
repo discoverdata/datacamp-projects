@@ -4,6 +4,9 @@
 ## Varun Khanna
 ### 17 October 2018
 
+#### The Shiny app of the project is available [here](https://discoverdata.shinyapps.io/UN_data/)
+
+
 ``` r
 knitr::opts_chunk$set(fig.width = 10, fig.height = 7, fig.path = 'Figs/', warning = FALSE, message = FALSE)
 ```
