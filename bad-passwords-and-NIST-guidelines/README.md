@@ -1,1 +1,1 @@
-Please (click here)[notebook.ipynb] to see the project.
+Please [click here](notebook.ipynb) to see the project.
