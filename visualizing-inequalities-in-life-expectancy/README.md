@@ -1,13 +1,11 @@
-Varun Khanna
-17 October 2018
-
 #### The Shiny app of the project is available [here](https://discoverdata.shinyapps.io/UN_data/)
 
 ``` r
 knitr::opts_chunk$set(fig.width = 10, fig.height = 7, fig.path = 'Figs/', warning = FALSE, message = FALSE)
 ```
 
-# United Nations life expectancy data
+United Nations life expectancy data
+===================================
 
 Life expectancy at birth is a measure of the average a living being is
 expected to live. It takes into account several demographic factors like
@@ -38,16 +36,17 @@ life_expectancy <- read.csv("dataset.csv", stringsAsFactors = FALSE, header = TR
 kable(head(life_expectancy))
 ```
 
-| Country.or.Area | Subgroup | Year      | Source                                                          | Unit  | Value | Value.Footnotes |
-| :-------------- | :------- | :-------- | :-------------------------------------------------------------- | :---- | ----: | --------------: |
-| Afghanistan     | Female   | 2000-2005 | UNPD\_World Population Prospects\_2006 (International estimate) | Years |    42 |              NA |
-| Afghanistan     | Female   | 1995-2000 | UNPD\_World Population Prospects\_2006 (International estimate) | Years |    42 |              NA |
-| Afghanistan     | Female   | 1990-1995 | UNPD\_World Population Prospects\_2006 (International estimate) | Years |    42 |              NA |
-| Afghanistan     | Female   | 1985-1990 | UNPD\_World Population Prospects\_2006 (International estimate) | Years |    41 |              NA |
-| Afghanistan     | Male     | 2000-2005 | UNPD\_World Population Prospects\_2006 (International estimate) | Years |    42 |              NA |
-| Afghanistan     | Male     | 1995-2000 | UNPD\_World Population Prospects\_2006 (International estimate) | Years |    42 |              NA |
+| Country.or.Area | Subgroup | Year      | Source                                                          | Unit  |  Value|  Value.Footnotes|
+|:----------------|:---------|:----------|:----------------------------------------------------------------|:------|------:|----------------:|
+| Afghanistan     | Female   | 2000-2005 | UNPD\_World Population Prospects\_2006 (International estimate) | Years |     42|               NA|
+| Afghanistan     | Female   | 1995-2000 | UNPD\_World Population Prospects\_2006 (International estimate) | Years |     42|               NA|
+| Afghanistan     | Female   | 1990-1995 | UNPD\_World Population Prospects\_2006 (International estimate) | Years |     42|               NA|
+| Afghanistan     | Female   | 1985-1990 | UNPD\_World Population Prospects\_2006 (International estimate) | Years |     41|               NA|
+| Afghanistan     | Male     | 2000-2005 | UNPD\_World Population Prospects\_2006 (International estimate) | Years |     42|               NA|
+| Afghanistan     | Male     | 1995-2000 | UNPD\_World Population Prospects\_2006 (International estimate) | Years |     42|               NA|
 
-## Life expectancy of men vs. women by country
+Life expectancy of men vs. women by country
+-------------------------------------------
 
 Let’s manipulate the data to make our exploration easier. We will build
 the dataset for our first plot in which we will represent the average
@@ -64,16 +63,17 @@ subdata <- life_expectancy  %>%
 kable(head(subdata))
 ```
 
-| Country.or.Area | Female | Male |
-| :-------------- | -----: | ---: |
-| Afghanistan     |     42 |   42 |
-| Albania         |     79 |   73 |
-| Algeria         |     72 |   70 |
-| Angola          |     43 |   39 |
-| Argentina       |     78 |   71 |
-| Armenia         |     75 |   68 |
+| Country.or.Area |  Female|  Male|
+|:----------------|-------:|-----:|
+| Afghanistan     |      42|    42|
+| Albania         |      79|    73|
+| Algeria         |      72|    70|
+| Angola          |      43|    39|
+| Argentina       |      78|    71|
+| Armenia         |      75|    68|
 
-## Visualize I
+Visualize I
+-----------
 
 A scatter plot is a useful way to visualize the relationship between two
 variables. It is a simple plot in which points are arranged on two axes,
@@ -90,9 +90,10 @@ subdata %>% ggplot(mapping = aes(x = Male, y = Female)) +
   geom_point()
 ```
 
-![](Figs/plot_1-1.png)<!-- -->
+![](Figs/plot_1-1.png)
 
-## Reference lines I
+Reference lines I
+-----------------
 
 A good plot must be easy to understand. There are many tools in
 `ggplot2` to achieve this goal and we will explore some of them now.
@@ -113,11 +114,12 @@ subdata %>% ggplot(mapping = aes(x = Male, y = Female)) +
   ylim(35,85)
 ```
 
-![](Figs/reference_line-1.png)<!-- -->
+![](Figs/reference_line-1.png)
 
 #### Note: From the above plot we can conclude that females live longer than males in almost every country.
 
-## Plot titles and axis labels
+Plot titles and axis labels
+---------------------------
 
 A key point to make a plot understandable is placing clear labels on it.
 Let’s add titles, axis labels, and a caption to refer to the source of
@@ -137,9 +139,10 @@ ggplot(subdata, aes(x = Male, y = Female)) +
        y = "Females")
 ```
 
-![](Figs/beautify-1.png)<!-- -->
+![](Figs/beautify-1.png)
 
-## Highlighting remarkable countries I
+Highlighting remarkable countries I
+-----------------------------------
 
 Now, we will label some points of our plot with the name of its
 corresponding country. We want to draw attention to some special
@@ -165,11 +168,12 @@ ggplot(subdata, aes(x = Male, y = Female)) +
 geom_text(data = longer_female_longevity, label = longer_female_longevity$Country.or.Area, color = "blue")
 ```
 
-![](Figs/highlight_1-1.png)<!-- -->
+![](Figs/highlight_1-1.png)
 
 #### Note: countries in the red have have female life expectancy much higher as compared to male life expectancy whereas countries in blue have lower or equal female life expectancy.
 
-## How has life expectancy by gender evolved?
+How has life expectancy by gender evolved?
+------------------------------------------
 
 Since our data contains historical information, let’s see now how life
 expectancy has evolved in recent years. Our second plot will represent
@@ -195,16 +199,17 @@ subdata2 <- life_expectancy %>%
 kable(head(subdata2))
 ```
 
-| Country.or.Area | Female\_1985\_1990 | Female\_2000\_2005 | Male\_1985\_1990 | Male\_2000\_2005 | diff\_Female | diff\_Male |
-| :-------------- | -----------------: | -----------------: | ---------------: | ---------------: | -----------: | ---------: |
-| Afghanistan     |                 41 |                 42 |               41 |               42 |            1 |          1 |
-| Albania         |                 75 |                 79 |               69 |               73 |            4 |          4 |
-| Algeria         |                 67 |                 72 |               65 |               70 |            5 |          5 |
-| Angola          |                 42 |                 43 |               38 |               39 |            1 |          1 |
-| Argentina       |                 75 |                 78 |               68 |               71 |            3 |          3 |
-| Armenia         |                 71 |                 75 |               66 |               68 |            4 |          2 |
+| Country.or.Area |  Female\_1985\_1990|  Female\_2000\_2005|  Male\_1985\_1990|  Male\_2000\_2005|  diff\_Female|  diff\_Male|
+|:----------------|-------------------:|-------------------:|-----------------:|-----------------:|-------------:|-----------:|
+| Afghanistan     |                  41|                  42|                41|                42|             1|           1|
+| Albania         |                  75|                  79|                69|                73|             4|           4|
+| Algeria         |                  67|                  72|                65|                70|             5|           5|
+| Angola          |                  42|                  43|                38|                39|             1|           1|
+| Argentina       |                  75|                  78|                68|                71|             3|           3|
+| Armenia         |                  71|                  75|                66|                68|             4|           2|
 
-## Visualize II
+Visualize II
+------------
 
 Now let’s create our second plot in which we will represent average life
 expectancy differences between “1985-1990” and “2000-2005” for men and
@@ -225,9 +230,10 @@ scale_y_continuous(limits = c(-25,25)) +
 theme_bw()
 ```
 
-![](Figs/visualize_2-1.png)<!-- -->
+![](Figs/visualize_2-1.png)
 
-## Reference lines II
+Reference lines II
+------------------
 
 Adding reference lines can make plots easier to understand. We already
 added a diagonal line to visualize differences between men and women
@@ -252,9 +258,10 @@ ggplot(subdata2, aes(x = diff_Male, y = diff_Female, label = Country.or.Area)) +
   theme_bw()
 ```
 
-![](Figs/reference_2-1.png)<!-- -->
+![](Figs/reference_2-1.png)
 
-## Highlighting remarkable countries
+Highlighting remarkable countries
+---------------------------------
 
 Concretely, we will point those three where the aggregated average life
 expectancy for men and women increased most and those three where
@@ -281,13 +288,14 @@ ggplot(subdata2, aes(x = diff_Male, y = diff_Female, label = Country.or.Area)) +
   theme_bw()
 ```
 
-![](Figs/highlight_2-1.png)<!-- -->
+![](Figs/highlight_2-1.png)
 
 **Note: Most life expectancy increase from 1985-2005 was observed in
 Egypt, Bhutan and Timor Leste on the other hand Zimbabwe, Botswana and
 Swaziland saw a significant drop in life expectancy.**
 
-## Who lives longer: Male or Female?
+Who lives longer: Male or Female?
+---------------------------------
 
 Traditionally, average life expectancy of males was lower as compared to
 females due to regular conflicts and wars. Since the conflicts are
@@ -303,17 +311,17 @@ Let us find out.
 subdata %>% summarise(Male_Min = min(Male, na.rm = TRUE), Male_Q1 = quantile(Male, probs = 0.25, na.rm = TRUE), Male_Median = median(Male, na.rm = TRUE), Male_Q3 = quantile(Male, probs = 0.75, na.rm = TRUE), Male_Max = max(Male, na.rm = TRUE), Male_Mean = mean(Male, na.rm = TRUE), Male_SD = sd(Male, na.rm = TRUE), Male_n = n(), Male_Missing = sum(is.na(Male))) %>% kable()
 ```
 
-| Male\_Min | Male\_Q1 | Male\_Median | Male\_Q3 | Male\_Max | Male\_Mean | Male\_SD | Male\_n | Male\_Missing |
-| --------: | -------: | -----------: | -------: | --------: | ---------: | -------: | ------: | ------------: |
-|        39 |       58 |           68 |       72 |        79 |   64.65128 | 10.52251 |     195 |             0 |
+|  Male\_Min|  Male\_Q1|  Male\_Median|  Male\_Q3|  Male\_Max|  Male\_Mean|  Male\_SD|  Male\_n|  Male\_Missing|
+|----------:|---------:|-------------:|---------:|----------:|-----------:|---------:|--------:|--------------:|
+|         39|        58|            68|        72|         79|    64.65128|  10.52251|      195|              0|
 
 ``` r
 subdata %>% summarise(Female_Min = min(Female, na.rm = TRUE), Female_Q1 = quantile(Female, probs = 0.25, na.rm = TRUE), Female_Median = median(Female, na.rm = TRUE), Female_Q3 = quantile(Female, probs = 0.75, na.rm = TRUE), Female_Max = max(Female, na.rm = TRUE), Female_Mean = mean(Female, na.rm = TRUE), Female_SD = sd(Female, na.rm = TRUE), Female_n = n(), Female_Missing = sum(is.na(Female))) %>% kable()
 ```
 
-| Female\_Min | Female\_Q1 | Female\_Median | Female\_Q3 | Female\_Max | Female\_Mean | Female\_SD | Female\_n | Female\_Missing |
-| ----------: | ---------: | -------------: | ---------: | ----------: | -----------: | ---------: | --------: | --------------: |
-|          39 |       62.5 |             74 |         79 |          85 |     69.42564 |    11.7613 |       195 |               0 |
+|  Female\_Min|  Female\_Q1|  Female\_Median|  Female\_Q3|  Female\_Max|  Female\_Mean|  Female\_SD|  Female\_n|  Female\_Missing|
+|------------:|-----------:|---------------:|-----------:|------------:|-------------:|-----------:|----------:|----------------:|
+|           39|        62.5|              74|          79|           85|      69.42564|     11.7613|        195|                0|
 
 The summary statistics shows the average life expectancy of males in 195
 countries is 64.65 years whereas for females is 69.42 years. This means
@@ -321,18 +329,18 @@ on an avergae females live 4.77 years longer than males.
 
 ``` r
 par(mfrow = c(1,3))
-subdata %>% boxplot(.$Male, .$Female, main = "Box plot of average life expectancy of Male and Females", data = ., names = c("Male","Female"), ylab = "Average life expectancy")
+subdata %>% boxplot(.$Male, .$Female, main = "Average life expectancy of Male and Females", data = ., names = c("Male","Female"), ylab = "Average life expectancy")
 
-hist(subdata$Male, main = "Histogram of Male life expectancy", probability = TRUE, ylab = "Probability", xlab = "Male")
+hist(subdata$Male, main = "Male life expectancy", probability = TRUE, ylab = "Probability", xlab = "Male")
 rnorm_male <- rnorm(nrow(subdata), mean = mean(subdata$Male), sd = sd(subdata$Male))
 lines(density(rnorm_male))
 
-hist(subdata$Female, main = "Histogram of Female life expectancy", probability = TRUE, ylab = "Probability", xlab = "Female")
+hist(subdata$Female, main = "Female life expectancy", probability = TRUE, ylab = "Probability", xlab = "Female")
 rnorm_female <- rnorm(nrow(subdata), mean = mean(subdata$Female), sd = sd(subdata$Female))
 lines(density(rnorm_female))
 ```
 
-![](Figs/boxplot_hitogram-1.png)<!-- -->
+![](Figs/boxplot_hitogram-1.png)
 
 ``` r
 par(mfrow = c(1,2))
@@ -345,7 +353,7 @@ qqPlot(subdata$Male, ylab = "Male Average Life Expectancy", distribution = "norm
 qqPlot(subdata$Female, ylab = "Female Average Life Expectancy", distribution = "norm")
 ```
 
-![](Figs/qqplot-1.png)<!-- -->
+![](Figs/qqplot-1.png)
 
     ## [1] 194 195
 
@@ -361,17 +369,28 @@ normally distributed.
     there are 195 countries which is greater than 30, so we can continue
     with paired sample t-test based on Central Limit Theorem.
 
-\(\mu1\) = Male life expectancy average in years
+*μ*1
+= Male life expectancy average in years
 
-\(\mu2\) = Female life expectancy average in years
+*μ*2
+= Female life expectancy average in years
 
-\(\mu\delta\) = \(\mu1\) - \(\mu2\)
+*μ**δ*
+=
+*μ*1
+-
+*μ*2
 
-**H<sub>0</sub>** : \(\mu\delta\) \(\ge\) 0 (Male life expectancy is
-greater than or equal to female life expectancy)
+**H<sub>0</sub>** :
+*μ**δ*
+≥
+0 (Male life expectancy is greater than or equal to female life
+expectancy)
 
-**H<sub>A</sub>** : \(\mu\delta\) \(<\) 0 (Female life expectancy is
-greater than male life expectancy)
+**H<sub>A</sub>** :
+*μ**δ*
+\<
+0 (Female life expectancy is greater than male life expectancy)
 
 Significance level : 1.00%
 
@@ -406,7 +425,8 @@ significance level. Based on the p-value, we reject null hypothesis that
 male life expectancy can be greater than or equal to female life
 expectancy.
 
-## Conclusion
+Conclusion
+----------
 
 On average Females live longer than males. The mean difference between
 the life expectancy of females and males is statistically significant.
