@@ -369,28 +369,17 @@ normally distributed.
     there are 195 countries which is greater than 30, so we can continue
     with paired sample t-test based on Central Limit Theorem.
 
-*μ*1
-= Male life expectancy average in years
+*μ*1 = Male life expectancy average in years
 
-*μ*2
-= Female life expectancy average in years
+*μ*2 = Female life expectancy average in years
 
-*μ**δ*
-=
-*μ*1
--
-*μ*2
+*μ**δ* = *μ*1 - *μ*2
 
-**H<sub>0</sub>** :
-*μ**δ*
-≥
-0 (Male life expectancy is greater than or equal to female life
-expectancy)
+**H<sub>0</sub>** : *μ**δ* ≥ 0 (Male life expectancy is greater than or
+equal to female life expectancy)
 
-**H<sub>A</sub>** :
-*μ**δ*
-\<
-0 (Female life expectancy is greater than male life expectancy)
+**H<sub>A</sub>** : *μ**δ* \< 0 (Female life expectancy is greater than
+male life expectancy)
 
 Significance level : 1.00%
 
